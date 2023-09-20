@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd files
+for x in {a..z};
+do
+    mv $x* ../"$x"
+    mv ${x^^}* ../"$x"
+done 
